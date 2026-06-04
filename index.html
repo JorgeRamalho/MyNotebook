@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="MyNotebook — Loja inovadora de notebooks de alta performance, design futurista e tecnologia de ponta." />
+  <title>MyNotebook | Alta Tecnologia em Notebooks</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Orbitron:wght@500;600;700;800&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="bg-orb bg-orb--1" aria-hidden="true"></div>
+  <div class="bg-orb bg-orb--2" aria-hidden="true"></div>
+  <div class="bg-orb bg-orb--3" aria-hidden="true"></div>
+  <div class="scanline" aria-hidden="true"></div>
+
+  <header class="header">
+    <div class="container header__inner">
+      <a href="#" class="logo">
+        <span class="logo__icon">MN</span>
+        <span class="logo__text">My<span>Notebook</span></span>
+      </a>
+      <nav class="nav" aria-label="Principal">
+        <a href="#inicio" class="nav__link">Início</a>
+        <a href="#tecnologia" class="nav__link">Tecnologia</a>
+        <a href="#produtos" class="nav__link">Produtos</a>
+        <a href="#galeria" class="nav__link">Galeria</a>
+        <a href="#contato" class="nav__link">Contato</a>
+      </nav>
+      <a href="#produtos" class="btn btn--primary">Explorar</a>
+      <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Carrossel de destaques (início do site) -->
+    <section class="carousel-section" id="inicio" aria-label="Destaques em promoção">
+      <div class="container">
+        <header class="carousel-section__header reveal">
+          <span class="section-tag">// Destaques em rotação</span>
+          <h2 class="carousel-section__title">Anúncios <span class="gradient">premium</span></h2>
+        </header>
+      </div>
+
+      <div class="carousel-section__showcase">
+        <div class="carousel" data-carousel>
+          <button type="button" class="carousel__btn carousel__btn--prev" aria-label="Anúncio anterior">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </button>
+
+          <div class="carousel__viewport">
+            <div class="carousel__track">
+              <div class="carousel__slide">
+                <article class="product-card product-card--carousel">
+                  <div class="product-card__image">
+                    <span class="product-card__tag">Flagship</span>
+                    <img src="assets/carrossel/quantum.jpg" alt="Quantum X1 Ultra" width="600" height="375" loading="eager" />
+                  </div>
+                  <div class="product-card__body">
+                    <span class="product-card__series">Série Quantum</span>
+                    <h3 class="product-card__name">Quantum X1 Ultra</h3>
+                    <div class="product-card__specs">
+                      <span class="spec-chip">i9 · 24 núcleos</span>
+                      <span class="spec-chip">RTX 5090</span>
+                      <span class="spec-chip">32GB DDR5</span>
+                    </div>
+                    <div class="product-card__footer">
+                      <span class="product-card__price">R$ 18.990</span>
+                      <a href="#produtos" class="btn btn--outline">Detalhes</a>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div class="carousel__slide">
+                <article class="product-card product-card--carousel">
+                  <div class="product-card__image">
+                    <span class="product-card__tag">Workstation</span>
+                    <img src="assets/carrossel/titan.jpg" alt="Titan W-17" width="600" height="375" loading="lazy" />
+                  </div>
+                  <div class="product-card__body">
+                    <span class="product-card__series">Série Titan</span>
+                    <h3 class="product-card__name">Titan W-17</h3>
+                    <div class="product-card__specs">
+                      <span class="spec-chip">Xeon class</span>
+                      <span class="spec-chip">ECC RAM</span>
+                      <span class="spec-chip">Quad GPU</span>
+                    </div>
+                    <div class="product-card__footer">
+                      <span class="product-card__price">R$ 32.500</span>
+                      <a href="#produtos" class="btn btn--outline">Detalhes</a>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div class="carousel__slide">
+                <article class="product-card product-card--carousel">
+                  <div class="product-card__image">
+                    <span class="product-card__tag">Creator</span>
+                    <img src="assets/carrossel/nebula.jpg" alt="Nebula Pro Studio — notebook creator moderno" width="600" height="375" loading="lazy" />
+                  </div>
+                  <div class="product-card__body">
+                    <span class="product-card__series">Série Nebula</span>
+                    <h3 class="product-card__name">Nebula Pro Studio</h3>
+                    <div class="product-card__specs">
+                      <span class="spec-chip">OLED 4K</span>
+                      <span class="spec-chip">64GB RAM</span>
+                      <span class="spec-chip">2TB NVMe</span>
+                    </div>
+                    <div class="product-card__footer">
+                      <span class="product-card__price">R$ 14.490</span>
+                      <a href="#produtos" class="btn btn--outline">Detalhes</a>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div class="carousel__slide">
+                <article class="product-card product-card--carousel">
+                  <div class="product-card__image">
+                    <span class="product-card__tag">Ultrabook</span>
+                    <img src="assets/carrossel/aero-slim.jpg" alt="Aero Slim 14 — ultrabook novo e moderno" width="600" height="375" loading="eager" />
+                  </div>
+                  <div class="product-card__body">
+                    <span class="product-card__series">Série Aero</span>
+                    <h3 class="product-card__name">Aero Slim 14</h3>
+                    <div class="product-card__specs">
+                      <span class="spec-chip">1.1kg</span>
+                      <span class="spec-chip">18h bateria</span>
+                      <span class="spec-chip">NPU AI</span>
+                    </div>
+                    <div class="product-card__footer">
+                      <span class="product-card__price">R$ 9.790</span>
+                      <a href="#produtos" class="btn btn--outline">Detalhes</a>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div class="carousel__slide">
+                <article class="product-card product-card--carousel">
+                  <div class="product-card__image">
+                    <span class="product-card__tag">Enterprise</span>
+                    <img src="assets/carrossel/vertex.jpg" alt="Vertex E-14 — notebook corporativo" width="600" height="375" loading="lazy" />
+                  </div>
+                  <div class="product-card__body">
+                    <span class="product-card__series">Série Vertex</span>
+                    <h3 class="product-card__name">Vertex E-14</h3>
+                    <div class="product-card__specs">
+                      <span class="spec-chip">vPro</span>
+                      <span class="spec-chip">5G opcional</span>
+                      <span class="spec-chip">MIL-STD</span>
+                    </div>
+                    <div class="product-card__footer">
+                      <span class="product-card__price">R$ 8.990</span>
+                      <a href="#produtos" class="btn btn--outline">Detalhes</a>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+
+          <button type="button" class="carousel__btn carousel__btn--next" aria-label="Próximo anúncio">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </button>
+
+          <div class="carousel__dots" role="tablist" aria-label="Selecionar anúncio"></div>
+          <p class="carousel__hint">
+            <span class="carousel__shuffle-icon">⟳</span>
+            Ordem aleatória · troca automática a cada 5s
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__content reveal">
+          <div class="hero__badge">Nova geração 2026 · Série Quantum</div>
+          <h1 class="hero__title">
+            O futuro da<br />
+            <span class="gradient">alta tecnologia</span><br />
+            nas suas mãos
+          </h1>
+          <p class="hero__subtitle">
+            MyNotebook redefine o que é possível: processadores de última geração,
+            displays OLED de precisão cirúrgica e engenharia de materiais premium
+            para quem exige excelência absoluta.
+          </p>
+          <div class="hero__actions">
+            <a href="#produtos" class="btn btn--primary">Ver coleção</a>
+            <a href="#tecnologia" class="btn btn--outline">Arquitetura tech</a>
+          </div>
+          <div class="hero__stats">
+            <div class="stat">
+              <div class="stat__value" data-count="240" data-suffix="+">0+</div>
+              <div class="stat__label">Modelos premium</div>
+            </div>
+            <div class="stat">
+              <div class="stat__value" data-count="99" data-suffix="%">0%</div>
+              <div class="stat__label">Satisfação clientes</div>
+            </div>
+            <div class="stat">
+              <div class="stat__value">24/7</div>
+              <div class="stat__label">Suporte especializado</div>
+            </div>
+          </div>
+        </div>
+        <div class="hero__visual reveal">
+          <div class="hero__ring" aria-hidden="true"></div>
+          <div class="hero__frame">
+            <span class="hero__hud hero__hud--tl">SYS::QUANTUM_CORE</span>
+            <img
+              src="assets/carrossel/hero.jpg"
+              alt="Notebook futurista de alta performance em ambiente tecnológico"
+              width="900"
+              height="675"
+              loading="eager"
+            />
+            <span class="hero__hud hero__hud--br">RTX · AI READY · 5nm</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Specs band -->
+    <div class="specs-band reveal">
+      <div class="container specs-band__inner">
+        <div class="specs-band__item">
+          <h3>5nm</h3>
+          <p>Processo fabril avançado</p>
+        </div>
+        <div class="specs-band__item">
+          <h3>240Hz</h3>
+          <p>Taxa de atualização pro</p>
+        </div>
+        <div class="specs-band__item">
+          <h3>64GB</h3>
+          <p>Memória DDR5 expandível</p>
+        </div>
+        <div class="specs-band__item">
+          <h3>AI</h3>
+          <p>NPU dedicada integrada</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Features / Tecnologia -->
+    <section id="tecnologia">
+      <div class="container">
+        <header class="section-header reveal">
+          <span class="section-tag">// Engenharia de precisão</span>
+          <h2 class="section-title">Tecnologia que transcende o comum</h2>
+          <p class="section-desc">
+            Cada detalhe foi projetado para performance extrema, dissipação térmica
+            inteligente e uma experiência visual que impressiona até os mais exigentes.
+          </p>
+        </header>
+        <div class="features__grid">
+          <article class="feature-card reveal">
+            <div class="feature-card__icon">⚡</div>
+            <h3 class="feature-card__title">Processadores Híbridos</h3>
+            <p class="feature-card__text">
+              Chips de arquitetura híbrida com núcleos performance e eficiência,
+              otimizados para IA, renderização e multitarefa sem compromissos.
+            </p>
+          </article>
+          <article class="feature-card reveal">
+            <div class="feature-card__icon">◈</div>
+            <h3 class="feature-card__title">Display Quantum OLED</h3>
+            <p class="feature-card__text">
+              Painéis com contraste infinito, 100% DCI-P3 e taxa variável adaptativa
+              para fluidez cinematográfica em qualquer ambiente.
+            </p>
+          </article>
+          <article class="feature-card reveal">
+            <div class="feature-card__icon">❄</div>
+            <h3 class="feature-card__title">Cooling Vapor Chamber</h3>
+            <p class="feature-card__text">
+              Sistema de dissipação com câmara de vapor e ventoinhas PWM silenciosas
+              mantêm temperaturas estáveis sob carga máxima.
+            </p>
+          </article>
+          <article class="feature-card reveal">
+            <div class="feature-card__icon">🔒</div>
+            <h3 class="feature-card__title">Segurança Biométrica</h3>
+            <p class="feature-card__text">
+              Leitor de impressão no teclado, reconhecimento facial IR e chip TPM 2.0
+              para proteção em nível empresarial.
+            </p>
+          </article>
+          <article class="feature-card reveal">
+            <div class="feature-card__icon">📡</div>
+            <h3 class="feature-card__title">Conectividade Wi-Fi 7</h3>
+            <p class="feature-card__text">
+              Thunderbolt 4, USB4 e redes de última geração para transferências
+              ultrarrápidas e latência mínima em jogos e streaming.
+            </p>
+          </article>
+          <article class="feature-card reveal">
+            <div class="feature-card__icon">🔋</div>
+            <h3 class="feature-card__title">Bateria Graphene Pro</h3>
+            <p class="feature-card__text">
+              Células de alta densidade com carregamento rápido 140W e autonomia
+              estendida para jornadas intensas sem interrupções.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Produtos -->
+    <section class="products" id="produtos">
+      <div class="container">
+        <header class="section-header reveal">
+          <span class="section-tag">// Catálogo exclusivo</span>
+          <h2 class="section-title">Equipamentos de alta complexidade</h2>
+          <p class="section-desc">
+            Selecione entre nossas linhas flagship — cada modelo é uma obra de
+            engenharia pensada para criadores, gamers e profissionais de elite.
+          </p>
+        </header>
+        <div class="products__grid">
+          <article class="product-card reveal">
+            <div class="product-card__image">
+              <span class="product-card__tag">Flagship</span>
+              <img
+                src="assets/carrossel/quantum.jpg"
+                alt="MyNotebook Quantum X1 — laptop gaming premium"
+                width="600"
+                height="375"
+                loading="lazy"
+              />
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__series">Série Quantum</span>
+              <h3 class="product-card__name">Quantum X1 Ultra</h3>
+              <div class="product-card__specs">
+                <span class="spec-chip">i9 · 24 núcleos</span>
+                <span class="spec-chip">RTX 5090</span>
+                <span class="spec-chip">32GB DDR5</span>
+              </div>
+              <div class="product-card__footer">
+                <span class="product-card__price">R$ 18.990</span>
+                <a href="#" class="btn btn--outline">Detalhes</a>
+              </div>
+            </div>
+          </article>
+          <article class="product-card reveal">
+            <div class="product-card__image">
+              <span class="product-card__tag">Creator</span>
+              <img
+                src="assets/carrossel/nebula.jpg"
+                alt="MyNotebook Nebula Pro — workstation criativa"
+                width="600"
+                height="375"
+                loading="lazy"
+              />
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__series">Série Nebula</span>
+              <h3 class="product-card__name">Nebula Pro Studio</h3>
+              <div class="product-card__specs">
+                <span class="spec-chip">OLED 4K</span>
+                <span class="spec-chip">64GB RAM</span>
+                <span class="spec-chip">2TB NVMe</span>
+              </div>
+              <div class="product-card__footer">
+                <span class="product-card__price">R$ 14.490</span>
+                <a href="#" class="btn btn--outline">Detalhes</a>
+              </div>
+            </div>
+          </article>
+          <article class="product-card reveal">
+            <div class="product-card__image">
+              <span class="product-card__tag">Ultrabook</span>
+              <img
+                src="assets/carrossel/aero-slim.jpg"
+                alt="MyNotebook Aero Slim — ultrabook fino e poderoso"
+                width="600"
+                height="375"
+                loading="lazy"
+              />
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__series">Série Aero</span>
+              <h3 class="product-card__name">Aero Slim 14</h3>
+              <div class="product-card__specs">
+                <span class="spec-chip">1.1kg</span>
+                <span class="spec-chip">18h bateria</span>
+                <span class="spec-chip">NPU AI</span>
+              </div>
+              <div class="product-card__footer">
+                <span class="product-card__price">R$ 9.790</span>
+                <a href="#" class="btn btn--outline">Detalhes</a>
+              </div>
+            </div>
+          </article>
+          <article class="product-card reveal">
+            <div class="product-card__image">
+              <span class="product-card__tag">Workstation</span>
+              <img
+                src="assets/carrossel/titan.jpg"
+                alt="MyNotebook Titan W — estação de trabalho móvel"
+                width="600"
+                height="375"
+                loading="lazy"
+              />
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__series">Série Titan</span>
+              <h3 class="product-card__name">Titan W-17</h3>
+              <div class="product-card__specs">
+                <span class="spec-chip">Xeon class</span>
+                <span class="spec-chip">ECC RAM</span>
+                <span class="spec-chip">Quad GPU</span>
+              </div>
+              <div class="product-card__footer">
+                <span class="product-card__price">R$ 32.500</span>
+                <a href="#" class="btn btn--outline">Detalhes</a>
+              </div>
+            </div>
+          </article>
+          <article class="product-card reveal">
+            <div class="product-card__image">
+              <span class="product-card__tag">Enterprise</span>
+              <img
+                src="assets/carrossel/vertex.jpg"
+                alt="MyNotebook Vertex E — notebook corporativo seguro"
+                width="600"
+                height="375"
+                loading="lazy"
+              />
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__series">Série Vertex</span>
+              <h3 class="product-card__name">Vertex E-14</h3>
+              <div class="product-card__specs">
+                <span class="spec-chip">vPro</span>
+                <span class="spec-chip">5G opcional</span>
+                <span class="spec-chip">MIL-STD</span>
+              </div>
+              <div class="product-card__footer">
+                <span class="product-card__price">R$ 8.990</span>
+                <a href="#" class="btn btn--outline">Detalhes</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Galeria -->
+    <section id="galeria">
+      <div class="container">
+        <header class="section-header reveal">
+          <span class="section-tag">// Visual tech</span>
+          <h2 class="section-title">Galeria de alta tecnologia</h2>
+          <p class="section-desc">
+            Componentes, chassis em alumínio aeroespacial, teclados mecânicos
+            e interfaces que definem a estética do futuro.
+          </p>
+        </header>
+        <div class="gallery__grid">
+          <div class="gallery__item gallery__item--large reveal">
+            <img
+              src="assets/galeria/setup.jpg"
+              alt="Setup tecnológico com múltiplos monitores e notebook"
+              loading="lazy"
+            />
+            <div class="gallery__overlay">
+              <h4>Command Center</h4>
+              <p>Estação de controle total</p>
+            </div>
+          </div>
+          <div class="gallery__item reveal">
+            <img
+              src="assets/galeria/teclado.jpg"
+              alt="Teclado mecânico RGB de notebook gamer"
+              loading="lazy"
+            />
+            <div class="gallery__overlay">
+              <h4>Periféricos Pro</h4>
+              <p>Input de precisão</p>
+            </div>
+          </div>
+          <div class="gallery__item reveal">
+            <img
+              src="assets/galeria/chip.jpg"
+              alt="Circuitos e tecnologia de hardware avançado"
+              loading="lazy"
+            />
+            <div class="gallery__overlay">
+              <h4>Chip Architecture</h4>
+              <p>Silício de última geração</p>
+            </div>
+          </div>
+          <div class="gallery__item reveal">
+            <img
+              src="assets/galeria/neon.jpg"
+              alt="Ambiente cyberpunk com iluminação neon tecnológica"
+              loading="lazy"
+            />
+            <div class="gallery__overlay">
+              <h4>Ambiente Neon</h4>
+              <p>Design imersivo</p>
+            </div>
+          </div>
+          <div class="gallery__item reveal">
+            <img
+              src="assets/galeria/display.jpg"
+              alt="Notebook aberto com tela iluminada em destaque"
+              loading="lazy"
+            />
+            <div class="gallery__overlay">
+              <h4>Display Edge</h4>
+              <p>Bordas infinitas</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta" id="contato">
+      <div class="container">
+        <div class="cta__box reveal">
+          <div class="cta__content">
+            <h2 class="cta__title">Pronto para elevar seu padrão tecnológico?</h2>
+            <p class="cta__text">
+              Consultoria personalizada, financiamento exclusivo e entrega expressa
+              para todo o Brasil. A experiência MyNotebook começa agora.
+            </p>
+            <a href="mailto:contato@mynotebook.com.br" class="btn btn--primary">Falar com especialista</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="#" class="logo">
+            <span class="logo__icon">MN</span>
+            <span class="logo__text">My<span>Notebook</span></span>
+          </a>
+          <p>
+            Loja inovadora dedicada a notebooks de alta complexidade tecnológica.
+            O futuro da computação móvel, com refinamento e precisão suíça.
+          </p>
+        </div>
+        <div class="footer__col">
+          <h4>Produtos</h4>
+          <a href="#">Quantum Series</a>
+          <a href="#">Nebula Pro</a>
+          <a href="#">Aero Slim</a>
+          <a href="#">Titan Workstation</a>
+        </div>
+        <div class="footer__col">
+          <h4>Suporte</h4>
+          <a href="#">Garantia estendida</a>
+          <a href="#">Assistência técnica</a>
+          <a href="#">Drivers &amp; firmware</a>
+          <a href="#">FAQ</a>
+        </div>
+        <div class="footer__col">
+          <h4>Empresa</h4>
+          <a href="#">Sobre nós</a>
+          <a href="#">Sustentabilidade</a>
+          <a href="#">Parceiros</a>
+          <a href="#">Carreiras</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2026 MyNotebook. Todos os direitos reservados.</span>
+        <span>Designed with quantum precision</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
