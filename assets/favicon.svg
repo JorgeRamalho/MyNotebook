@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="MyNotebook">
+  <defs>
+    <linearGradient id="mn-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00e5ff"/>
+      <stop offset="50%" stop-color="#3d7eff"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+  </defs>
+  <rect width="32" height="32" rx="8" fill="url(#mn-gradient)"/>
+  <text
+    x="16"
+    y="21"
+    text-anchor="middle"
+    font-family="Orbitron, Arial, sans-serif"
+    font-size="11"
+    font-weight="700"
+    fill="#030508"
+  >MN</text>
+</svg>
