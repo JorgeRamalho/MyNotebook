@@ -1,24 +1,15 @@
-📌 ## My Notebook 💻 - O seu notebook
+📌##MyNotebook - O Seu notebook Ltda
 
-🌐 ## Website Link do projeto online 
-https://newmynotebook.netlify.app/
+🌐 ## Site Link do projeto online: https://mynotebook-mauve.vercel.app/
 
-📂 ## Repositório
-https://github.com//JorgeRamalho/Mynotebook
+📂 ## Repositório: https://github.com//JorgeRamalho/MyNotebook
 
 💻 ## Tecnologias
-Html Css JavaScript React Typescript Node.js 
 
-📲 ## Funcionalidades
-Fotos e Imaganes Vídeos Layout Website Style
+HTML CSS JavaScript React TypeScript Node.js 📲 ## Funcionalidades
 
-📠 ## Como executar git clone 
-... npm install npm run dev
+Fotos e Imagens Vídeos Layout Estilo do Site
 
-💿📄 ## Autor: Jorge R. Barbosa 
+📠 ## Como executar git clone ... npm install npm run dev
 
-💼 LinkedIn: https://www.linkedin.com/in/jorge-r-barbosa-aabb0417b/ 
-
-👾 GitHub: https://github.com/JorgeRamalho.git 
-
-☎️ Contato: 41 99143-4153
+💿 ## Autor 📄Seu nome: Jorge R. Barbosa 💼 LinkedIn: https://www.linkedin.com/in/jorge-r-barbosa-aabb0417b/ 👾 GitHub: https://github.com/JorgeRamalho ☎️ Contato: 41 99143-4153
